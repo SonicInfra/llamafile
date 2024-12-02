@@ -1,9 +1,5 @@
 name: Sonicinfra x8
-on:
-  push:
-    branches: [ master, main, fix ]
-  pull_request:
-    branches: [ master, main, fix ]
+on: workflow_dispatch
 
 jobs:
   ubuntu-sonicinfra-make:
