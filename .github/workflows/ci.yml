@@ -1,4 +1,4 @@
-name: CI
+name: Github x4
 on:
   push:
     branches: [ master, main, fix ]
