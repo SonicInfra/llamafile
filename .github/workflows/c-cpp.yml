@@ -1,4 +1,4 @@
-name: CI
+name: CI_SonicInfra_8c
 on:
   push:
     branches: [ master, main, fix ]
@@ -8,7 +8,7 @@ on:
 jobs:
   ubuntu-sonicinfra-make:
     timeout-minutes: 60
-    runs-on: sonicinfra
+    runs-on: [sonicinfra, 8c]
 
     steps:
       - name: Clone
