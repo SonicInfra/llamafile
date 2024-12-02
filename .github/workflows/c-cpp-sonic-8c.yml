@@ -1,4 +1,4 @@
-name: CI-sonic-8c
+name: SonicInfra x8
 on:
   push:
     branches: [ master, main, fix ]
