@@ -1,6 +1,11 @@
 name: Github x4
-on: workflow_dispatch
-
+on: 
+  push:
+    branches: [ master, main, fix ]
+  pull_request:
+    branches: [ master, main, fix ]
+  workflow_dispatch:
+  
 jobs:
   ubuntu-focal-make:
     timeout-minutes: 60
