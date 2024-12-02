@@ -1,6 +1,11 @@
 name: Sonicinfra x8
-on: workflow_dispatch
-
+on:
+  push:
+    branches: [ master, main, fix ]
+  pull_request:
+    branches: [ master, main, fix ]
+  workflow_dispatch:
+  
 jobs:
   ubuntu-sonicinfra-make:
     timeout-minutes: 60
